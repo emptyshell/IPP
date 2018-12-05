@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <teckshop>
+ <order>
+ <laptop>BasicNetbook</laptop>
+ <color>white</color>
+ <customization> 
+ 	<w>webcam</w> 
+ 	<b>backlight</b> 
+ 	<f>fingerprint</f> 
+ </customization>
+ <client>Albert</client>
+</order>
+
+ <order>
+ <laptop>AdvancedNotebook</laptop>
+ <color>white</color>
+ <customization> 
+ 	<w>webcam</w> 
+ 	<b>backlight</b> 
+ 	<f>fingerprint</f>
+ 	<t>touchscreen</t>
+ </customization>
+ <client>David</client>
+</order>
+
+ <order>
+ <laptop>BasicGamebook</laptop>
+ <color>white</color>
+ <customization> 
+ 	<w>webcam</w> 
+ 	<b>backlight</b> 
+ 	<t>touchscreen</t>
+ </customization>
+ <client>Mike</client>
+</order>
+
+ <order>
+ <laptop>BasicUltrabook</laptop>
+ <color>white</color>
+ <customization>  
+ 	<b>backlight</b> 
+ 	<f>fingerprint</f>
+ 	<t>touchscreen</t>
+ </customization>
+ <client>Charlie</client>
+</order>
+
+</teckshop>
