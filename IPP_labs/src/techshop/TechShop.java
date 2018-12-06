@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import mailbox.Adaptor;
-/*TODO
- * add atribute mailBoxOrder
- * add method to read last mail order from adaptor
- * 
- */
+import payment.Payment;
+import payment.PaymentHandler;
+
 public class TechShop implements ITechShop,LastProductRequest,SameProductRequest {
 	private static Order newOrder = new Order();
 	private static Order lastOrder = null;
@@ -21,7 +19,8 @@ public class TechShop implements ITechShop,LastProductRequest,SameProductRequest
 		System.out.print("\n\nWelcome to the TECHSHOP!!!\n"
 				+ "1.Read orders from mailbox\n"
 				+ "2.Make new purchease\n"
-				+ "3.Exit\n"
+				+ "3.Make Payment\n"
+				+ "4.Exit\n"
 				+ "\nEnter your option: ");
 		scan = new Scanner(System.in);
 		int n = scan.nextInt();
@@ -33,6 +32,8 @@ public class TechShop implements ITechShop,LastProductRequest,SameProductRequest
 			newPurchase();
 			break;
 		case 3:
+			makePayment(newOrder);
+		case 4:
 			run = false;
 			break;
 			default:
@@ -168,5 +169,10 @@ public class TechShop implements ITechShop,LastProductRequest,SameProductRequest
 			System.out.println("Customization: " + orderList.get(i).getDecorator().getLaptopApearence());
 		}
 		
+	}
+	
+	public static void makePayment(Order o) {
+		PaymentHandler pHandler = new PaymentHandler();
+		pHandler.handlePayment();
 	}
 }

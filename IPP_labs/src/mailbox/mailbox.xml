@@ -45,14 +45,4 @@
  <client>Charlie</client>
 </order>
 
-<order>
- <laptop>custom</laptop>
- <color>white</color>
- <customization>  
- 	<b>backlight</b> 
- 	<f>fingerprint</f>
- 	<t>touchscreen</t>
- </customization>
- <client>Charlie</client>
-</order>
 </teckshop>
